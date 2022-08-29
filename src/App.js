@@ -4,7 +4,7 @@ import Signin from './Auth-components/Signin'
 import Signup from './Auth-components/Signup'
 import Account from './Auth-components/Account'
 import { AuthContextProvider } from './Auth-components/AuthContext';
-
+import AuthenticatedRoute from './Auth-components/AuthenticatedRoute'
 const App = () => {
   return (
     <div>
@@ -13,7 +13,14 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Signin />} />
           <Route path='/signup' element={<Signup />} />
-          <Route path='/account' element={<Account />} />
+          <Route
+            path='/account'
+            element={
+              <AuthenticatedRoute>
+                <Account />
+              </AuthenticatedRoute>
+            }
+          />
         </Routes>
         </AuthContextProvider>
     </div>

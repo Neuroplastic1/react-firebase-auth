@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from './AuthContext';
 
 const Signup = () => {
-    console.log(UserAuth)
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('')
@@ -18,7 +17,7 @@ const Signup = () => {
         navigate('/account')
       } catch (e) {
         setError(e.message);
-        console.log(e.message);
+        console.log(error.message);
       }
     };
   
