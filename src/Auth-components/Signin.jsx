@@ -15,6 +15,7 @@ const Signin = () => {
     try {
       await signIn(email, password)
       navigate('/account')
+      
     } catch (e) {
       setError(e.message)
       console.log(error)

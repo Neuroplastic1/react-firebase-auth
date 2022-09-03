@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserAuth } from './AuthContext';
+import UpdatePassword from "./UpdatePassword";
 
 const Account = () => {
   const { user, logout } = UserAuth();
@@ -23,6 +24,7 @@ console.log(user)
       <button onClick={handleLogout} className='border border-blue-500 px-6 py-2 my-4 bg-bg-gray-600 hover:bg-green-500'>
         Logout
       </button>
+      <UpdatePassword />
     </div>
   );
 };

@@ -25,7 +25,7 @@ const Signup = () => {
     return (
       <div className='max-w-[700px] mx-auto my-16 p-4'>
         <div>
-          <h1 className='text-2xl font-bold text-bg-gradient-to-r from-green-500 via-blue-500 to-purple-500'>Sign up for a free account</h1>
+          <h1 className='mb-3 text-transparent max-w-[40ch] leading-relaxed text-3xl sm:text-4xl bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 bg-clip-text'>Sign up for a free account</h1>
           <p className='py-2 text-white'>
             Already have an account?{' '}
             <Link to='/' className='font-bold text-white hover:text-green-500'>
